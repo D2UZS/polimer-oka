@@ -457,6 +457,15 @@
 		font-size: 15px;
 		line-height: calc(100% * 18 / 15);
 	}
+	/*animation*/
+	._fadeInBottom,
+	._fadeInLeft,
+	._fadeInRight {
+		transition: all .8s ease 0s;
+	}
+
+	/*animation end*/
+
 	/*blocks*/
 	/*btn*/
 	.btn {
@@ -480,7 +489,7 @@
 		height: 28px;
 		cursor: pointer;
 		z-index: 5;
-		padding: 8px 5px 8px;
+		padding: 5.5px 2px;
 
 		&__inner {
 			position: relative;
@@ -999,17 +1008,17 @@
 
 	/*contacts*/
 	.contacts {
-		padding: 350px 0 58px;
+		padding: 450px 0 58px;
 		&::before {
 			height: 0;
 			width: calc(100% * 770 / 320);
 			padding-top: calc(100% * 357 / 320);
-			top: 270px;
+			top: 370px;
 			transform: translateX(calc(-100% * 580 / 770));
 		}
 
 		&__map {
-			height: 270px;
+			height: 370px;
 		}
 
 		&__content {

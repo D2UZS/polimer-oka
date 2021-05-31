@@ -283,8 +283,8 @@ body._lock {
   opacity: 0;
   -webkit-transform: translate3d(50%, 0, 0);
           transform: translate3d(50%, 0, 0);
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
 }
 
 ._fadeInRight._active {
@@ -301,7 +301,7 @@ body._lock {
   transition: all 1s ease 0.3s;
 }
 
-._fadeInBottom._active {
+._active ._fadeInBottom {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
@@ -2158,6 +2158,14 @@ textarea {
     font-size: 15px;
     line-height: calc(100% * 18 / 15);
   }
+  /*animation*/
+  ._fadeInBottom,
+  ._fadeInLeft,
+  ._fadeInRight {
+    -webkit-transition: all .8s ease 0s;
+    transition: all .8s ease 0s;
+  }
+  /*animation end*/
   /*blocks*/
   /*btn*/
   .btn {
@@ -2181,7 +2189,7 @@ textarea {
     height: 28px;
     cursor: pointer;
     z-index: 5;
-    padding: 8px 5px 8px;
+    padding: 5.5px 2px;
   }
   .burger-menu__inner {
     position: relative;
@@ -2644,18 +2652,18 @@ textarea {
   /*presentation end*/
   /*contacts*/
   .contacts {
-    padding: 350px 0 58px;
+    padding: 450px 0 58px;
   }
   .contacts::before {
     height: 0;
     width: calc(100% * 770 / 320);
     padding-top: calc(100% * 357 / 320);
-    top: 270px;
+    top: 370px;
     -webkit-transform: translateX(calc(-100% * 580 / 770));
             transform: translateX(calc(-100% * 580 / 770));
   }
   .contacts__map {
-    height: 270px;
+    height: 370px;
   }
   .contacts__content {
     padding-top: 14px;

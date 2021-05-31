@@ -12,7 +12,7 @@
 ._fadeInRight {
 	opacity: 0;
 	transform: translate3d(50%, 0, 0);
-	transition: all 1s ease 0s;
+	transition: all 1s ease 0.3s;
 	&._active {
 		opacity: 1;
 		transform: none;
@@ -23,7 +23,10 @@
 	opacity: 0;
 	transform: translate3d(0, 30%, 0);
 	transition: all 1s ease 0.3s;
-	&._active {
+}
+
+._active {
+	._fadeInBottom {
 		opacity: 1;
 		transform: none;
 	}
