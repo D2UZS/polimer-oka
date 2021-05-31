@@ -32,3 +32,18 @@ if (advantages.length > 0 && !isMobile.any()) {
 	});
 }
 // advantages end
+
+
+// ! Решение проблемы с фуллскрин блоком на телефоне
+if (window.innerWidth < 992) {
+	setVhElement('#header-body');
+	window.addEventListener('resize', function () {
+		setVhElement('#header-body');
+	});
+}
+function setVhElement(element) {
+	let vh = window.innerHeight * 0.01;
+	let documentElement = document.querySelector(element);
+	documentElement.style.setProperty('--vh', `${vh}px`);
+}
+// Решение проблемы с фуллскрин блоком на телефоне end
