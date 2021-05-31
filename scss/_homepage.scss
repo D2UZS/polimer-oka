@@ -59,6 +59,8 @@
 		position: absolute;
 		width: calc(100% * 336 / 696);
 		padding-top: calc(100% * 456 / 696);
+		transform: translate(50%,-20%);
+		opacity: 0;
 
 		img {
 			position: absolute;
@@ -74,18 +76,21 @@
 		&--1 {
 			left: 0;
 			bottom: 0;
+			animation: _cardFade .5s linear 1.5s forwards;
 		}
 		&--2 {
 			left: calc(100% * 222 / 696);
 			top: 6%;
 			width: calc(100% * 295 / 696);
 			padding-top: calc(100% * 400 / 696);
+			animation: _cardFade .5s linear 1s forwards;
 		}
 		&--3 {
 			top: 0;
 			right: 0;
 			width: calc(100% * 224 / 696);
 			padding-top: calc(100% * 304 / 696);
+			animation: _cardFade .5s linear .5s forwards;
 		}
 	}
 }
