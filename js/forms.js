@@ -197,11 +197,6 @@ function inputs_init(inputs) {
 							input_clear_mask(input, input_g_value);
 						}
 					}).mask(input);
-
-					// const selector = document.querySelector("._phone");
-
-				// 	const im = new Inputmask("+7(999) 999 9999");
-				// 	im.mask(input);
 				}
 
 				if (input.classList.contains('_digital')) {
@@ -258,6 +253,7 @@ function input_focus_add(input) {
 function input_focus_remove(input) {
 	input.classList.remove('_focus');
 	input.parentElement.classList.remove('_focus');
+	input.placeholder = '';
 }
 function input_clear_mask(input, input_g_value) {
 	input.inputmask.remove();
