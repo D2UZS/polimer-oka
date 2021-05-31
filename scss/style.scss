@@ -1,0 +1,75 @@
+//<МИКСИНЫ>===================================================================
+@import "_mixins";
+
+//<ШРИФТЫ>===================================================================
+@import "_fonts";
+
+//<ПЕРЕМЕННЫЕ>===================================================================
+$minWidth: 320px; // минимальная ширина сайта
+$maxWidth: 1440; // размер полотна в макете
+$maxWidthContainer: 1224; // ширина контейнера
+$md1: $maxWidthContainer + 30;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//<ОБНУЛЕНИЕ>===================================================================
+@import "_null";
+
+//<НАСТРОЙКИ САЙТА>===================================================================
+body {
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #9E9E9E;
+	font-size: 18px;
+	line-height: 140%;
+	background-color: #fff;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 720px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 15px;
+	}
+}
+
+//<БИБЛИОТЕКИ СТИЛЕЙ>===================================================================
+@import "_swiper";
+
+//<УНИВЕРСАЛЬНЫЕ БЛОКИ>===================================================================
+@import "_animation";
+@import "_blocks";
+@import "_form";
+@import "_popup";
+
+
+//<ОСНОВНЫЕ БЛОКИ>===================================================================
+@import "_header";
+@import "_homepage";
+@import "_footer";
+
+//<МЕДИА ЗАПРОСЫ>===================================================================
+@import "_adaptive";

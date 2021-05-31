@@ -1,0 +1,92 @@
+/*fonts*/
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-300.woff2') format('woff2'),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-300.woff') format('woff');
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-regular.woff') format('woff');
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-500.woff2') format('woff2'),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-500.woff') format('woff');
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/Roboto/roboto-v27-latin_cyrillic-700.woff') format('woff');
+}
+/* ubuntu-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-300.woff2') format('woff2'),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-300.woff') format('woff');
+}
+/* ubuntu-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-regular.woff') format('woff');
+}
+/* ubuntu-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-500.woff2') format('woff2'),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-500.woff') format('woff');
+}
+/* ubuntu-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/Ubuntu/ubuntu-v15-latin_cyrillic-700.woff') format('woff');
+}
+/* ubuntu-condensed-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+	font-display: swap;
+  src: local(''),
+       url('../fonts/Ubuntu Condensed/ubuntu-condensed-v11-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/Ubuntu Condensed/ubuntu-condensed-v11-latin_cyrillic-regular.woff') format('woff');
+}
+/*fonts end*/

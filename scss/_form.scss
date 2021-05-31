@@ -1,0 +1,94 @@
+/*form*/
+//<FORM ()>====================================================================================================
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+
+	&__line {
+		position: relative;
+		margin: 0 0 27px 0;
+	}
+
+	&__label {
+		font-size: 18px;
+		line-height: 140%;
+		position: absolute;
+		bottom: 16px;
+		left: 17px;
+		transition: all 0.2s;
+	}
+	&__line._focus {
+		.form__label {
+			bottom: 100%;
+			color: #0a3b4b;
+			font-size: 14px;
+		}
+	}
+
+	&__line._error {
+		&::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			overflow: hidden;
+			background: url(../images/icon-error.svg) center/100% no-repeat;
+			position: absolute;
+			top: 50%;
+			right: 16px;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__consent {
+		display: block;
+		font-size: 13px;
+		line-height: 140%;
+		margin: -7px 0 40px;
+	}
+
+	&__btn {
+		margin: 0 auto;
+	}
+
+	&__error {
+		font-size: 13px;
+		line-height: 140%;
+		color: #e12900;
+		position: absolute;
+		left: 14px;
+		bottom: 100%;
+	}
+}
+
+//</FORM>====================================================================================================
+
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	border-radius: 8px !important;
+	width: 100%;
+	display: block;
+	padding: 0px 17px;
+	font-size: 18px;
+	height: 55px;
+	border: 1px solid #9e9e9e;
+	background: none;
+
+	&._focus {
+		border-color: #0a3b4b;
+	}
+}
+
+//</INPUT>====================================================================================================
+/*form end*/

@@ -1,0 +1,27 @@
+/*footer*/
+.footer {
+	position: relative;
+	padding: 24px 0 47px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		background: center/100% no-repeat;
+		&--polymer {
+			width: 80px;
+			height: 30px;
+			background-image: url(../images/logo_polymer_gray.png);
+			margin-right: 128px;
+		}
+		&--firat {
+			width: 80px;
+			height: 25px;
+			background-image: url(../images/logo_firat_gray.png);
+		}
+	}
+}
+
+/*footer end*/

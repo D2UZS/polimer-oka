@@ -1,0 +1,56 @@
+/*animation*/
+._fadeInLeft {
+	opacity: 0;
+	transform: translate3d(-50%, 0, 0);
+	transition: all 1s ease 0.3s;
+	&._active {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+._fadeInRight {
+	opacity: 0;
+	transform: translate3d(50%, 0, 0);
+	transition: all 1s ease 0s;
+	&._active {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+._fadeInBottom {
+	opacity: 0;
+	transform: translate3d(0, 30%, 0);
+	transition: all 1s ease 0.3s;
+	&._active {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes rubberBand {
+	0% {
+		transform: rotate(-19.96deg) scale3d(1, 1, 1);
+	}
+	30% {
+		transform: rotate(-19.96deg) scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		transform: rotate(-19.96deg) scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		transform: rotate(-19.96deg) scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		transform: rotate(-19.96deg) scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		transform: rotate(-19.96deg) scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		transform: rotate(-19.96deg) scale3d(1, 1, 1);
+	}
+}
+
+/*animation end*/
