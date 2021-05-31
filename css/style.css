@@ -909,12 +909,27 @@ textarea {
   padding-top: calc(100% * 520 / 1224);
 }
 
+.banner__images._active .banner__img--1 {
+  -webkit-animation: _cardFade .5s linear 1s forwards;
+          animation: _cardFade .5s linear 1s forwards;
+}
+
+.banner__images._active .banner__img--2 {
+  -webkit-animation: _cardFade .5s linear .5s forwards;
+          animation: _cardFade .5s linear .5s forwards;
+}
+
+.banner__images._active .banner__img--3 {
+  -webkit-animation: _cardFade .5s linear 0s forwards;
+          animation: _cardFade .5s linear 0s forwards;
+}
+
 .banner__img {
   position: absolute;
   width: calc(100% * 336 / 696);
   padding-top: calc(100% * 456 / 696);
-  -webkit-transform: translate(50%, -20%);
-          transform: translate(50%, -20%);
+  -webkit-transform: translate(30%, -10%);
+          transform: translate(30%, -10%);
   opacity: 0;
 }
 
@@ -936,8 +951,6 @@ textarea {
 .banner__img--1 {
   left: 0;
   bottom: 0;
-  -webkit-animation: _cardFade .5s linear 1.5s forwards;
-          animation: _cardFade .5s linear 1.5s forwards;
 }
 
 .banner__img--2 {
@@ -945,8 +958,6 @@ textarea {
   top: 6%;
   width: calc(100% * 295 / 696);
   padding-top: calc(100% * 400 / 696);
-  -webkit-animation: _cardFade .5s linear 1s forwards;
-          animation: _cardFade .5s linear 1s forwards;
 }
 
 .banner__img--3 {
@@ -954,8 +965,6 @@ textarea {
   right: 0;
   width: calc(100% * 224 / 696);
   padding-top: calc(100% * 304 / 696);
-  -webkit-animation: _cardFade .5s linear .5s forwards;
-          animation: _cardFade .5s linear .5s forwards;
 }
 
 /*banner end*/
