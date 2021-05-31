@@ -186,23 +186,23 @@ function inputs_init(inputs) {
 					}).mask(input);
 
 				}
-				// if (input.classList.contains('_phone')) {
+				if (input.classList.contains('_phone')) {
 
-				// 	input.classList.add('_mask');
-				// 	Inputmask("+7(999) 999 9999", {
-				// 		//"placeholder": '',
-				// 		clearIncomplete: true,
-				// 		clearMaskOnLostFocus: true,
-				// 		onincomplete: function () {
-				// 			input_clear_mask(input, input_g_value);
-				// 		}
-				// 	}).mask(input);
-				// }
+					// input.classList.add('_mask');
+					// Inputmask("+7(999) 999 9999", {
+					// 	// "placeholder": '',
+					// 	clearIncomplete: true,
+					// 	clearMaskOnLostFocus: true,
+					// 	onincomplete: function () {
+					// 		input_clear_mask(input, input_g_value);
+					// 	}
+					// }).mask(input);
 
-				const selector = document.querySelector("._phone");
+					// const selector = document.querySelector("._phone");
 
-				const im = new Inputmask("+7(999) 999 9999");
-				im.mask(selector);
+					const im = new Inputmask("+7(999) 999 9999");
+					im.mask(input);
+				}
 
 				if (input.classList.contains('_digital')) {
 					input.classList.add('_mask');
