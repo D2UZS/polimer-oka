@@ -50,6 +50,7 @@ function setVhElement(element) {
 
 
 
+// ! Анимация баннера
 let count = 1;
 const imgList = document.querySelector('.banner__images');
 
@@ -75,3 +76,5 @@ function removeEl() {
 }
 
 setTimeout(removeEl, 2000);
+
+// Анимация баннера end

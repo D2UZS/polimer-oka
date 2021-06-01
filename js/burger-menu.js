@@ -10,7 +10,20 @@ if (burgerMenu != null) {
 			burgerMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
 		}
+		if (menuBody.closest("._active")) {
+			const menuLinks = menuBody.querySelectorAll('.header__navigation a');
+			menuLinks.forEach(link => {
+				link.addEventListener('click', () => setTimeout(menu_close, 600));
+			});
+		}
 	});
 };
 
+// burgerMenu end
+
+function menu_close() {
+	let menuBody = document.getElementById("header-body");
+	burgerMenu.classList.remove("_active");
+	menuBody.classList.remove("_active");
+}
 // burgerMenu end
