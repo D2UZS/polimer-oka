@@ -47,3 +47,31 @@ function setVhElement(element) {
 	documentElement.style.setProperty('--vh', `${vh}px`);
 }
 // Решение проблемы с фуллскрин блоком на телефоне end
+
+
+
+let count = 1;
+const imgList = document.querySelector('.banner__images');
+
+const createElement = () => {
+	const node = document.createElement('div');
+	node.classList.add("banner__img");
+	node.classList.add(`banner__img--${count}`);
+	imgList.insertAdjacentElement("afterbegin", node);
+	count++;
+	if (count > 3) {
+		count = 1;
+	}
+}
+
+createElement();
+setInterval(createElement, 2000);
+
+function removeEl() {
+	setInterval(() => {
+		imgList.lastElementChild.remove();
+	}, 2000);
+	
+}
+
+setTimeout(removeEl, 2000);

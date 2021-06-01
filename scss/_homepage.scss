@@ -53,55 +53,64 @@
 		right: 0;
 		width: calc(100% * 696 / 1224);
 		padding-top: calc(100% * 520 / 1224);
-
-		&._active {
-			.banner__img {
-				&--1 {
-					animation: _cardFade .5s linear 1s forwards;
-				}
-				&--2 {
-					animation: _cardFade .5s linear .5s forwards;
-				}
-				&--3 {
-					animation: _cardFade .5s linear 0s forwards;
-				}
-			}
-		}
 	}
 
 	&__img {
 		position: absolute;
-		width: calc(100% * 336 / 696);
-		padding-top: calc(100% * 456 / 696);
-		transform: translate(30%,-10%);
-		opacity: 0;
+		transition: all 0.6s;
 
-		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border-radius: 30px;
-			object-fit: cover;
-			object-position: center;
-			filter: drop-shadow(0px 0px 60px rgba(1, 77, 103, 0.35));
+		border-radius: 30px;
+		filter: drop-shadow(0px 0px 60px rgba(1, 77, 103, 0.35));
+		background: center/cover no-repeat;
+
+		&:nth-child(1) {
+			left: calc(100% * 636 / 696);
+			bottom: calc(100% * 340 / 520);
+			width: calc(100% * 150 / 696);
+			padding-top: calc(100% * 204 / 696);
+			opacity: 0;
 		}
-		&--1 {
-			left: 0;
-			bottom: 0;
-		}
-		&--2 {
-			left: calc(100% * 222 / 696);
-			top: 6%;
-			width: calc(100% * 295 / 696);
-			padding-top: calc(100% * 400 / 696);
-		}
-		&--3 {
-			top: 0;
-			right: 0;
+
+		&:nth-child(2) {
+			left: calc(100% * 472 / 696);
+			bottom: calc(100% * 216 / 520);
 			width: calc(100% * 224 / 696);
 			padding-top: calc(100% * 304 / 696);
+			opacity: 1;
+		}
+
+		&:nth-child(3) {
+			left: calc(100% * 222 / 696);
+			bottom: calc(100% * 88 / 520);
+			width: calc(100% * 295 / 696);
+			padding-top: calc(100% * 400 / 696);
+			opacity: 1;
+		}
+
+		&:nth-child(4) {
+			left: 0;
+			bottom: 0;
+			width: calc(100% * 336 / 696);
+			padding-top: calc(100% * 456 / 696);
+			opacity: 1;
+		}
+
+		&:nth-child(5) {
+			left: calc(100% * -200 / 696);
+			bottom: calc(100% * -140 / 520);
+			width: calc(100% * 410 / 696);
+			padding-top: calc(100% * 556 / 696);
+			opacity: 0;
+		}
+
+		&--1 {
+			background-image: url(../images/banner__pic-1.jpg);
+		}
+		&--2 {
+			background-image: url(../images/banner__pic-2.jpg);
+		}
+		&--3 {
+			background-image: url(../images/banner__pic-3.jpg);
 		}
 	}
 }

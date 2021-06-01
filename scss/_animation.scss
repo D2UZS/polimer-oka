@@ -33,14 +33,78 @@
 	}
 }
 
-@keyframes _cardFade {
-	0% {
+// @keyframes _cardFade {
+// 	0% {
+// 		left: calc(100% * 636 / 696);
+// 		bottom: calc(100% * 340 / 520);
+// 		width: calc(100% * 150 / 696);
+// 		padding-top: calc(100% * 204 / 696);
+// 		opacity: 0;
+// 	}
 
-	}
-	100% {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-}
+// 	12.5% {
+// 		left: calc(100% * 472 / 696);
+// 		bottom: calc(100% * 216 / 520);
+// 		width: calc(100% * 224 / 696);
+// 		padding-top: calc(100% * 304 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	25% {
+// 		left: calc(100% * 472 / 696);
+// 		bottom: calc(100% * 216 / 520);
+// 		width: calc(100% * 224 / 696);
+// 		padding-top: calc(100% * 304 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	37.5% {
+// 		left: calc(100% * 222 / 696);
+// 		bottom: calc(100% * 88 / 520);
+// 		width: calc(100% * 295 / 696);
+// 		padding-top: calc(100% * 400 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	50% {
+// 		left: calc(100% * 222 / 696);
+// 		bottom: calc(100% * 88 / 520);
+// 		width: calc(100% * 295 / 696);
+// 		padding-top: calc(100% * 400 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	62.5% {
+// 		left: 0;
+// 		bottom: 0;
+// 		width: calc(100% * 336 / 696);
+// 		padding-top: calc(100% * 456 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	75% {
+// 		left: 0;
+// 		bottom: 0;
+// 		width: calc(100% * 336 / 696);
+// 		padding-top: calc(100% * 456 / 696);
+// 		opacity: 1;
+// 	}
+
+// 	87.5% {
+// 		left: calc(100% * -200 / 696);
+// 		bottom: calc(100% * -140 / 520);
+// 		width: calc(100% * 410 / 696);
+// 		padding-top: calc(100% * 556 / 696);
+// 		opacity: 0;
+// 	}
+
+// 	100% {
+// 		left: calc(100% * -200 / 696);
+// 		bottom: calc(100% * -140 / 520);
+// 		width: calc(100% * 410 / 696);
+// 		padding-top: calc(100% * 556 / 696);
+// 		opacity: 0;
+// 	}
+// }
 
 /*animation end*/
