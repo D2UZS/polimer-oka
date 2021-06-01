@@ -1883,19 +1883,6 @@ textarea {
     width: 100%;
     padding-top: calc(100% * 528 / 720);
   }
-  .banner__img {
-    width: calc(100% * 336 / 720);
-    padding-top: calc(100% * 456 / 720);
-  }
-  .banner__img--2 {
-    left: calc(100% * 245 / 720);
-    width: calc(100% * 295 / 720);
-    padding-top: calc(100% * 400 / 720);
-  }
-  .banner__img--3 {
-    width: calc(100% * 224 / 720);
-    padding-top: calc(100% * 304 / 720);
-  }
   /*banner end*/
   /*about*/
   .about {
@@ -2384,7 +2371,7 @@ textarea {
     letter-spacing: -0.02em;
     margin-bottom: 24px;
   }
-  .banner__img img {
+  .banner__img {
     border-radius: 15px;
   }
   /*banner end*/
