@@ -13,7 +13,10 @@ if (burgerMenu != null) {
 		if (menuBody.closest("._active")) {
 			const menuLinks = menuBody.querySelectorAll('.header__navigation a');
 			menuLinks.forEach(link => {
-				link.addEventListener('click', () => setTimeout(menu_close, 600));
+				link.addEventListener('click', () => {
+					setTimeout(menu_close, 600);
+					body_lock(600);
+				});
 			});
 		}
 	});
